@@ -119,14 +119,14 @@ section strong {
 
 @media screen and (max-width: 640px) {
   section h2 {
-    font-size: 0.7rem;
-    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
   }
   section h3 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   section a {
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     padding: 0.3rem 0.7rem;
     margin-bottom: 1rem;
   }
@@ -135,7 +135,7 @@ section strong {
     overflow: hidden;
   }
   section p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -186,7 +186,7 @@ section strong {
     padding: 0.5rem 0.7rem;
   }
   .importante li {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 }
 
