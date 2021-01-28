@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
 
 @import 'colores';
-@include 'responsive.scss';
+@import 'mixings';
 
 %center {
     display: flex;
@@ -42,10 +42,22 @@ header {
         text-transform: uppercase;
         color: white;
     }
+
+    @include mobile {
+        padding: 1.5rem;
+
+        img {
+            width: 100px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+        }
+    }
 }
 
 main {
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .divider {
@@ -87,11 +99,43 @@ section {
     }
 
     img {
-        width: 50%;
+        width: 100%;
+        max-width: 600px;
+        overflow: hidden;
+    }
+
+    p {
+        font-size: 1rem;
     }
 
     strong {
         color: $primary
+    }
+
+    @include mobile {
+        h2 {
+            font-size: 0.7rem;
+            padding: 0.5rem 0.7rem;
+        }
+
+        h3 {
+            font-size: 0.7rem;
+        }
+
+        a {
+            font-size: 0.3rem;
+            padding: 0.3rem 0.7rem;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        p {
+            font-size: 0.5rem;
+        }
     }
 }
 
@@ -105,6 +149,15 @@ section {
 
     p {
         margin-bottom: 1rem;
+    }
+
+    &-reverse {
+        flex-direction: row-reverse;
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -122,6 +175,17 @@ section {
             list-style: none;
         }
     }
+
+    @include mobile {
+        h2 {
+            font-size: 0.7rem;
+            padding: 0.5rem 0.7rem;
+        }
+
+        li {
+            font-size: 0.5rem;
+        }
+    }
 }
 
 footer {
@@ -132,33 +196,33 @@ footer {
 
     .address {
         margin: 20px;
-    }
 
-    .address h2 {
-        margin-bottom: 10px;
+        h2 {
+            margin-bottom: 10px;
+        }
     }
 
     .email {
         margin: 20px;
-    }
 
-    .email a {
-        text-decoration: none;
-        color: white;
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
 
     .phone {
         display: flex;
         justify-content: center;
         flex-direction: row;
-    }
 
-    .phone span {
-        font-weight: bold;
-    }
+        span {
+            font-weight: bold;
+        }
 
-    .phone .phone-link {
-        margin-right: 15px;
+        &-link {
+            margin-right: 15px;
+        }
     }
 
     .whatsapp {
@@ -171,5 +235,11 @@ footer {
         color: steelblue;
         text-decoration: none;
         margin-bottom: 20px;
+    }
+
+    @include mobile {
+        h2 {
+            font-size: 1.2rem;
+        }
     }
 }
