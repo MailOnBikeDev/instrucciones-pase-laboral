@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap");
+header, .text, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.paso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header {
+  background: #303868;
+  background: linear-gradient(190deg, #303868 0%, #6f8fc8 35%, #00d4ff 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+
+header {
+  padding: 2.5rem;
+}
+
+header img {
+  width: 250px;
+  margin: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+main {
+  padding: 4rem;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background: #303868;
+  margin: 4rem 0;
+}
+
+section h2 {
+  background-color: #303868;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #303868;
+}
+
+section a {
+  background-color: #52678E;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+section a:hover {
+  background-color: #6F8FC8;
+}
+
+section img {
+  width: 50%;
+}
+
+section strong {
+  color: #303868;
+}
+
+.text {
+  padding: 0 1rem;
+}
+
+.paso p {
+  margin-bottom: 1rem;
+}
+
+.importante h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.importante ul {
+  margin-bottom: 1rem;
+}
+
+.importante ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+}
+
+footer .address {
+  margin: 20px;
+}
+
+footer .address h2 {
+  margin-bottom: 10px;
+}
+
+footer .email {
+  margin: 20px;
+}
+
+footer .email a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .phone span {
+  font-weight: bold;
+}
+
+footer .phone .phone-link {
+  margin-right: 15px;
+}
+
+footer .whatsapp {
+  color: green;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+footer .telegram {
+  color: steelblue;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
