@@ -50,8 +50,20 @@ header h1 {
   color: white;
 }
 
+@media screen and (max-width: 640px) {
+  header {
+    padding: 1.5rem;
+  }
+  header img {
+    width: 100px;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+}
+
 main {
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .divider {
@@ -92,11 +104,39 @@ section a:hover {
 }
 
 section img {
-  width: 50%;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+section p {
+  font-size: 1rem;
 }
 
 section strong {
   color: #303868;
+}
+
+@media screen and (max-width: 640px) {
+  section h2 {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
+  }
+  section h3 {
+    font-size: 0.7rem;
+  }
+  section a {
+    font-size: 0.3rem;
+    padding: 0.3rem 0.7rem;
+    margin-bottom: 1rem;
+  }
+  section img {
+    width: 100%;
+    overflow: hidden;
+  }
+  section p {
+    font-size: 0.5rem;
+  }
 }
 
 .text {
@@ -105,6 +145,25 @@ section strong {
 
 .paso p {
   margin-bottom: 1rem;
+}
+
+.paso-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 640px) {
+  .paso {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .importante h2 {
@@ -119,6 +178,16 @@ section strong {
 .importante ul li {
   margin-bottom: 0.5rem;
   list-style: none;
+}
+
+@media screen and (max-width: 640px) {
+  .importante h2 {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .importante li {
+    font-size: 0.5rem;
+  }
 }
 
 footer {
@@ -161,7 +230,7 @@ footer .phone span {
   font-weight: bold;
 }
 
-footer .phone .phone-link {
+footer .phone-link {
   margin-right: 15px;
 }
 
@@ -175,5 +244,11 @@ footer .telegram {
   color: steelblue;
   text-decoration: none;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  footer h2 {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
